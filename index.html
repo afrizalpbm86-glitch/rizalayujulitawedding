@@ -136,6 +136,20 @@
     @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
   </style>
+/* JURUS PAMUNGKAS ANTI KETIMPA */
+html, body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+}
+
+* {
+    position: relative;
+    z-index: 1;
+}
+
+img, .cover, .player-box, .container, .content, main {
+    z-index: 99 !important;
+    background: transparent !important;
+}
 </head>
 <body>
 
@@ -308,16 +322,6 @@
       }
     }
   </script>
-  /* BIAR FOTO GAK KETIMPA BACKGROUND */
-.player-container, .main-content, .cover-box {
-    position: relative;
-    z-index: 2;
-}
-
-body {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
-    background-attachment: fixed;
-}
   
 </body>
 </html>
